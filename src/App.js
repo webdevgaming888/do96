@@ -52,7 +52,7 @@ const App = () => {
   return (
  <> {landingPage ? <Landing changeLanguage={changeLanguage} /> :
     <Router>
-      <video loop autoPlay muted>
+      <video loop autoPlay playsInline muted>
         <source src={BgVideo}></source>
       </video>
       <svg width="0" height="0" className='set-gradient-icon'>

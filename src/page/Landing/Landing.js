@@ -7,7 +7,7 @@ import landingVideo from "../../assests/common/landingbg.mp4";
 const Landing = ({ changeLanguage }) => {
   return (
     <section className="landing-page">
-      <video loop autoPlay muted className='landing-video'>
+      <video loop autoPlay playsInline muted className='landing-video'>
         <source src={landingVideo}></source>
       </video>
       <div className='landing-content'>
