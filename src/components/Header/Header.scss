@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  // z-index: 3;
+  position: relative;
+  // background: url('../../assests/navigationbar/navbg.jpg');
+  // background: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.header-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header-logo{
+    padding: 0 1rem !important;
+    background: #000;
+  }
+}

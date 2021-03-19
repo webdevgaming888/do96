@@ -1,0 +1,127 @@
+html {
+  background-color: #111;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8d6b37 ;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.page-container {
+  padding: 0;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+}
+
+
+.page-title {
+  background-color: transparent;
+  background-image: linear-gradient(
+180deg
+, #d1b03e 0%, #faf395 30%, #c59f2f 70%, #886226 85%, #dcb94a 95%, #f9f3a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke:#ce9c52;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.set-gradient-icon{
+  position: absolute;
+}
+/* .text-box{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom, #e1cf32,#fff881 20%,#e7e173 45%,#bd9b05 50%,#fff079,#d39803);
+  position: absolute;
+  z-index: 999;
+} */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .page-title {
+    text-align: center;
+  }
+  .page-container {
+    padding: 1rem 0;
+  }
+
+}
+@media screen and (max-width: 575px) {
+  video{
+    right: -213%;
+    bottom: 0%;
+  }
+  .container, .container-fluid{
+    padding: 0 !important;
+  }
+}

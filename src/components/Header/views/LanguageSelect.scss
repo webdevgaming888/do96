@@ -1,0 +1,65 @@
+.language {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-select {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(220deg, #ce9c52 10%, #faf395 50%, #c59f2f 80%, #ce9c52 100%);
+  padding: 1px;
+  left: -40%;
+  top: 110%;
+  animation: langshow ease-in-out 0.3s;
+  button {
+    white-space: nowrap;
+    border: 0;
+    background-color: #111;
+    color: #edcc6b;
+    text-align: left;
+    padding: 0.5rem;
+    margin-bottom: 1px;
+  }
+}
+.icon-language {
+  color: rgb(184, 184, 184);
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+.hide-lang {
+  display: none;
+}
+.current-language {
+  color: #fff;
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+}
+.language-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@keyframes langshow {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .language{
+  margin-right: 10px;
+
+  }
+  .language-select {
+    left: -152%;
+  }
+}

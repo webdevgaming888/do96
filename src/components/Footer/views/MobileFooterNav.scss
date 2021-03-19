@@ -1,0 +1,76 @@
+.mobile-footer {
+  background: url("../../../assests/navigationbar/bottomnavbg.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+  padding: 1rem 0;
+  height: 140px;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ce9c52;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0 0.8rem;
+    white-space: nowrap;
+    max-width: 20%;
+  }
+  svg {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+  }
+  button {
+    border-radius: 50%;
+    font-size: 0.75rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #edcc6b;
+    font-weight: bold;
+    text-align: center;
+    height: 5.5rem;
+    animation: updown 2s infinite;
+  }
+}
+.mobile-footer-left,
+.mobile-footer-right {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-bottom: -5px;
+}
+.icon-gradient {
+  fill: url(#gold-gradient);
+}
+@keyframes updown {
+  0%{
+    transform:translateY(20%);
+  }
+  50%{
+    transform:translateY(-10%);
+  }
+  100%{
+    transform:translateY(20%);
+  }
+}
+@keyframes joinbtn {
+  0% {
+    box-shadow: 0 0 0 0px rgba(#fcf6ba, 0.5), 0 0 0 0px rgba(#b38728, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(#b38728, 0), 0 0 0 0px rgba(#fcf6ba, 0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile-footer {
+    display: flex;
+  }
+}

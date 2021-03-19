@@ -1,0 +1,135 @@
+.footer {
+  padding: 2rem 0;
+  width: 100%;
+  bottom: 0;
+  // z-index: 1;
+  position: relative;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-title {
+  color: #fff;
+  margin-bottom: .2rem;
+}
+.why-us .footer-title{
+  text-align: center;
+}
+.why-us .footer-content{
+  text-align: justify;
+}
+.footer-content {
+  color: #c1c1c1;
+  display: flex;
+  a {
+    color: #edcc6b;
+    margin-right: .5rem;
+    height: 2rem;
+  }
+}
+.footer-col {
+  width: 100%;
+  padding-bottom: 1rem;
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+.footer-contact {
+  cursor: pointer;
+  background: linear-gradient(220deg, #ce9c52 10%, #faf395 50%, #c59f2f 80%, #ce9c52 100%);
+  margin-right: 1rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  1.2rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  span{
+    font-size: 2rem;
+    display: flex;
+    margin-right: .5rem;
+  }
+}
+.contact-quick{
+  display: flex;
+  justify-content: space-between;
+ width: 100%;
+}
+
+.right-icon {
+  margin-left: -0.2rem;
+  margin-right: 0.5rem;
+}
+
+.footer-bank {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+}
+.payment-method{
+  display: flex;
+  height: 9rem;
+  justify-content: space-between;
+}
+
+.contact-us,
+.footer-bank,
+.quick-link{
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 5rem 1rem;
+  }
+  .footer-col {
+    width: 100%;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .footer-title{
+    margin-bottom: 1rem;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    .footer-contact{
+      margin-bottom:.5rem;
+    }
+  }
+  .payment-method{
+    flex-direction: column;
+    .footer-bank{
+      flex-wrap: wrap;
+      width: 100%;
+      a{
+        height: 100%;
+        width: 25%;
+        margin-right: 0;
+      }
+    }
+  }
+  .quick-link {
+    display: none;
+  }
+  .why-us,
+  .contact-us,
+  .footer-nav,
+  .footer-bank {
+    padding-bottom:.5rem;
+  }
+.footer-wallet{
+  padding-bottom:9rem;
+}
+}

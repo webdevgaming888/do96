@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+nav a {
+  color: #edcc6c;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 1rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  &:hover {
+    text-decoration: none;
+  color: #edcc6c;
+
+  }
+}
+.icon-gradient{
+  fill: url(#gold-gradient);
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}

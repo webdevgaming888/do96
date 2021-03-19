@@ -1,0 +1,22 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+.guide-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:1rem ;
+}
+.home-list {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .home-list {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+}

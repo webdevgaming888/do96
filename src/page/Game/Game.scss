@@ -1,0 +1,92 @@
+.game-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.game-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.game-card {
+  background: linear-gradient(220deg, #ce9c52 10%, #faf395 50%, #c59f2f 80%, #ce9c52 100%);
+  padding: 1px;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
+
+.game-card-inner {
+  background: linear-gradient(#161616 50%, #252525 );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.game-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 10rem;
+    height: auto;
+    min-height: 3rem;
+    margin-bottom: 0.7rem;
+  }
+  h2 {
+    color: #edcc6b;
+    font-size: 1.5rem;
+  }
+}
+.game-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  button {
+    outline: none;
+    border: none;
+    background: #222;
+    color: #ce9c52;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ce9c52;
+    padding: 0.2rem 0;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+  .btn-agent{
+    background: linear-gradient(to bottom, #ce9c52, #faf395);
+    color: #000;
+    border: 1px solid #ce9c52;
+
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .game-card {
+    width: 100%;
+    margin-right: 0;
+  }
+  .game-card-inner{
+    flex-direction: column;
+  }
+  .game-button-group{
+    width: 100%;
+  }
+}
