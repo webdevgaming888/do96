@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "./Game.scss";
 import {
   kiss,
-  kaya,
-  kissplus,
+  // kaya,
+  // kissplus,
   evo,
-  joker,
-  live22,
+  // joker,
+  // live22,
   lpe,
   mega888,
   newtown,
   pussy888,
   xe888,
-  rollex,
+  // rollex,
   greatwall
 } from "./GameImageData";
 import { withNamespaces } from "react-i18next";
@@ -20,22 +20,22 @@ import { Helmet } from "react-helmet";
 
 const Game = ({ t }) => {
   const [gameList] = useState([
-    {
-      id: 1,
-      gameName: "918KISSPLUS",
-      androidURL: "http://app.m-918kiss.online/",
-      iosURL: "http://app.m-918kiss.online/",
-      agentURL: "http://hs.681958.com/admin/login.do",
-      gameLogo: kissplus,
-    },
-    {
-      id: 2,
-      gameName: "918KAYA",
-      androidURL: "http://d.88ifun.com/",
-      iosURL: "http://d.88ifun.com/",
-      agentURL: "https://k.889efun.com/login",
-      gameLogo: kaya,
-    },
+    // {
+    //   id: 1,
+    //   gameName: "918KISSPLUS",
+    //   androidURL: "http://app.m-918kiss.online/",
+    //   iosURL: "http://app.m-918kiss.online/",
+    //   agentURL: "http://hs.681958.com/admin/login.do",
+    //   gameLogo: kissplus,
+    // },
+    // {
+    //   id: 2,
+    //   gameName: "918KAYA",
+    //   androidURL: "http://d.88ifun.com/",
+    //   iosURL: "http://d.88ifun.com/",
+    //   agentURL: "https://k.889efun.com/login",
+    //   gameLogo: kaya,
+    // },
     {
       id: 3,
       gameName: "918KISS",
@@ -47,8 +47,8 @@ const Game = ({ t }) => {
     {
       id: 4,
       gameName: "MEGA888",
-      androidURL: "http://m.mega385.com/mega/index.html",
-      iosURL: "http://m.mega385.com/mega/index.html",
+      androidURL: "http://mega888download.com/",
+      iosURL: "http://mega888download.com/",
       agentURL: "https://k3.xigift.com/201222/login.html",
       gameLogo: mega888,
     },
@@ -84,23 +84,23 @@ const Game = ({ t }) => {
       agentURL: "https://kiosk.pt-ka.com/",
       gameLogo: lpe,
     },
-    {
-      id: 9,
-      gameName: "LIVE22",
-      androidURL: "https://yerba22.com/Login",
-      iosURL: "https://yerba22.com/Login",
-      agentURL: "https://hongcha22.com/Login",
-      gameLogo: live22,
-    },
-    {
-      id: 10,
-      gameName: "JOKER",
-      androidURL: "http://www.joker123b.net/",
-      iosURL: "http://www.joker123b.net/",
-      agentURL:
-        "http://www.awe7799.net/Account?url=http%3A%2F%2Fwww.awe7799.net%2F",
-      gameLogo: joker,
-    },
+    // {
+    //   id: 9,
+    //   gameName: "LIVE22",
+    //   androidURL: "https://yerba22.com/Login",
+    //   iosURL: "https://yerba22.com/Login",
+    //   agentURL: "https://hongcha22.com/Login",
+    //   gameLogo: live22,
+    // },
+    // {
+    //   id: 10,
+    //   gameName: "JOKER",
+    //   androidURL: "http://www.joker123b.net/",
+    //   iosURL: "http://www.joker123b.net/",
+    //   agentURL:
+    //     "http://www.awe7799.net/Account?url=http%3A%2F%2Fwww.awe7799.net%2F",
+    //   gameLogo: joker,
+    // },
     {
       id: 11,
       gameName: "NEWTOWN",
@@ -109,14 +109,14 @@ const Game = ({ t }) => {
       agentURL: "https://kiosk.nday11.com/",
       gameLogo: newtown,
     },
-    {
-      id: 12,
-      gameName: "Rollex",
-      androidURL: "http://cdn.rpro11.com/m.html",
-      iosURL: "http://cdn.rpro11.com/m.html",
-      agentURL: "https://kiosk.rpro11.com/",
-      gameLogo: rollex,
-    },
+    // {
+    //   id: 12,
+    //   gameName: "Rollex",
+    //   androidURL: "http://cdn.rpro11.com/m.html",
+    //   iosURL: "http://cdn.rpro11.com/m.html",
+    //   agentURL: "https://kiosk.rpro11.com/",
+    //   gameLogo: rollex,
+    // },
     {
       id: 13,
       gameName: "GreatWall",
