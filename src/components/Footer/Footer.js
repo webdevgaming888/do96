@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import "./Footer.scss";
 import FooterBank from "./views/FooterBank";
 import WhyUs from "./views/WhyUs";
-import Maybank from "../../assests/footer/Maybank.png";
+// import Maybank from "../../assests/footer/Maybank.png";
 import BSN from "../../assests/footer/BSN.png";
 import PBB from "../../assests/footer/Public.png";
 import HLB from "../../assests/footer/HongLeong.png";
@@ -29,7 +29,7 @@ const Footer = () => {
   ]);
 
   const [bank] = useState([
-    { id: 1, src: Maybank },
+    // { id: 1, src: Maybank },
     { id: 2, src: HLB },
     { id: 3, src: CIMB },
     { id: 4, src: PBB },

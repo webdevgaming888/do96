@@ -3,7 +3,7 @@ import { withNamespaces } from "react-i18next";
 import CIMB from "../../assests/footer/CIMB-Bank.png";
 import BSN from "../../assests/footer/BSN.png";
 import HLB from "../../assests/footer/HongLeong.png";
-import Maybank from "../../assests/footer/Maybank.png";
+// import Maybank from "../../assests/footer/Maybank.png";
 import PBE from "../../assests/footer/Public.png";
 import TNG from "../../assests/footer/TNG.png";
 import Digi from "../../assests/footer/Digi.png";
@@ -27,10 +27,10 @@ const Bank = ({ t }) => {
       name: "Hong Leong Bank",
       src: HLB,
     },
-    {
-      name: "Maybank",
-      src: Maybank,
-    },
+    // {
+    //   name: "Maybank",
+    //   src: Maybank,
+    // },
     {
       name: "Public Bank",
       src: PBE,
