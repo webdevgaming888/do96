@@ -10,7 +10,6 @@ import Digi from "../../assests/footer/Digi.png";
 import Maxis from "../../assests/footer/Maxis.png";
 import Boost from "../../assests/footer/Boost.png";
 import Hotlink from "../../assests/footer/Hotlink.png"
-import Celcom from "../../assests/footer/Celcom.png";
 import "./Bank.scss";
 import { Helmet } from "react-helmet";
 
@@ -57,10 +56,6 @@ const Bank = ({ t }) => {
     {
       name:"Hotlink",
       src:Hotlink
-    },
-    {
-      name:"Celcom",
-      src:Celcom
     }
   ]);
   return (

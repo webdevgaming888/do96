@@ -14,7 +14,6 @@ import Digi from "../../assests/footer/Digi.png";
 import Maxis from "../../assests/footer/Maxis.png";
 import Boost from "../../assests/footer/Boost.png";
 import Hotlink from "../../assests/footer/Hotlink.png"
-import Celcom from "../../assests/footer/Celcom.png";
 import {FaWhatsapp , FaTelegram} from "react-icons/fa";
 const Footer = () => {
   const [link] = useState([
@@ -57,10 +56,6 @@ const Footer = () => {
     {
       name:"Hotlink",
       src:Hotlink
-    },
-    {
-      name:"Celcom",
-      src:Celcom
     }
   ]);
   const footerLink = (method) => {
