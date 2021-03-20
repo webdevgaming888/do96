@@ -24,6 +24,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(Boolean);
   const [currentLang, setCurrentLang] = useState("bm");
   const [landingPage, setLandingPage] = useState(true);
+  const [showLang, setShowLang] = useState(false);
   const handleOpen = () => {
     setIsOpen((current) => !current);
   };
@@ -34,8 +35,11 @@ const App = () => {
     i18n.changeLanguage(lng);
     setCurrentLang(lng)
     setLandingPage(false)
+    setShowLang(false)
   };
-
+  const langIconClick = () => {
+    setShowLang((current) => !current);
+  };
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -64,7 +68,7 @@ const App = () => {
         </linearGradient>
       </svg>
       {/* <div className='text-box'></div> */}
-      <Header isOpen={isOpen} handleOpen={handleOpen} currentLang={currentLang} />
+      <Header isOpen={isOpen} handleOpen={handleOpen} currentLang={currentLang} changeLanguage={changeLanguage} showLang={showLang} langIconClick={langIconClick}/>
       <MobileSideNav isOpen={isOpen} handleOpen={handleOpen} />
       <Container fluid className="page-container">
         <Container>

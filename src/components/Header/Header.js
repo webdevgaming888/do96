@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./views/Navbar";
 import Logo from "./views/Logo";
 import "./Header.scss";
 import { Login } from "./views/Login";
 import { Container } from "react-bootstrap";
-import i18n from "../../i18n";
 import { Component } from "react";
 export class Hamburger extends Component {
   render() {
@@ -32,18 +31,10 @@ export class Hamburger extends Component {
   }
 }
 
-const Header = ({ isOpen, handleOpen, currentLang }) => {
-  const [showLang, setShowLang] = useState(false);
+const Header = ({ isOpen, handleOpen, currentLang, changeLanguage, showLang, langIconClick }) => {
 
 
-  const langIconClick = () => {
-    setShowLang((current) => !current);
-  };
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setShowLang(false);
-  };
 
   const whatsappLink = (e) => {
     e.preventDefault();

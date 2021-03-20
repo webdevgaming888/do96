@@ -9,7 +9,6 @@ export const Login = ({ langIconClick, changeLanguage, showLang, whatsappLink, c
         changeLanguage={changeLanguage}
         showLang={showLang}
         currentLang={currentLang}
-        
       />
       <button className="login-btn" onClick={(e)=>whatsappLink(e)}>
         <span></span>
