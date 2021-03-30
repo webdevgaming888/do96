@@ -24,8 +24,8 @@ const Game = ({ t }) => {
     {
       id: 1,
       gameName: "SCR888",
-      androidURL: "m.hola888.com",
-      iosURL: "m.hola888.com",
+      androidURL: "https://m.hola888.com/",
+      iosURL: "https://m.hola888.com/",
       agentURL: "http://kiosk.hola888.com/",
       gameLogo: scr888,
     },
