@@ -12,6 +12,7 @@ import {
   newtown,
   pussy888,
   xe888,
+  scr888,
   // rollex,
   greatwall
 } from "./GameImageData";
@@ -20,14 +21,14 @@ import { Helmet } from "react-helmet";
 
 const Game = ({ t }) => {
   const [gameList] = useState([
-    // {
-    //   id: 1,
-    //   gameName: "918KISSPLUS",
-    //   androidURL: "http://app.m-918kiss.online/",
-    //   iosURL: "http://app.m-918kiss.online/",
-    //   agentURL: "http://hs.681958.com/admin/login.do",
-    //   gameLogo: kissplus,
-    // },
+    {
+      id: 1,
+      gameName: "SCR888",
+      androidURL: "m.hola888.com",
+      iosURL: "m.hola888.com",
+      agentURL: "http://kiosk.hola888.com/",
+      gameLogo: scr888,
+    },
     // {
     //   id: 2,
     //   gameName: "918KAYA",
